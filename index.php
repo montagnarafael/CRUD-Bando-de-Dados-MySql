@@ -6,6 +6,7 @@ session_start();
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <title>CRUD Bando de Dados</title>  
     </head>
     <body>
@@ -46,24 +47,11 @@ session_start();
                 border-radius:8px;
             }
 
-            .botao{
-                width:30%;
-                margin-left:140px;
-                color:#fff;
-                background-color: #3498db;
-                border: 2px solid #3498db;
-                border-radius:5px;
-                cursor:pointer;
-            }
-
-            .botao:hover{
-                background-color:#1E90FF;
-            }
-
+          
             p{
                 position: absolute;
                 color:green;
-                margin-top:330px;
+                margin-top:350px;
                 margin-left:560px;
                 z-index: 2;
                 
@@ -91,8 +79,10 @@ session_start();
             <label>Email:</label> <br>
             <input type="email" name="email" placeholder="Digite Seu Email"><br><br>
 
-            <input type="submit" value="Cadastrar" class="botao">
+            <input type="submit" value="Cadastrar" class="btn btn-success">
         </form>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </body>
 
 </html>
